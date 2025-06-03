@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Agrahari | Web Developer & Data Science Enthusiast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6e48aa;
+            --secondary: #9d50bb;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --gray: #95a5a6;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .contact-info a:hover {
+            transform: translateY(-3px);
+        }
+        
+        .section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: var(--secondary);
+            margin-bottom: 5px;
+        }
+        
+        .experience, .education, .project {
+            margin-bottom: 25px;
+        }
+        
+        .job-title, .degree {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .company, .school {
+            color: var(--gray);
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .date {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .cert-card {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .job-title, .degree {
+                flex-direction: column;
+            }
+            
+            .date {
+                margin-top: 5px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Add your profile image if available -->
+            <!-- <img src="profile.jpg" alt="Riya Agrahari" class="profile-img"> -->
+            <h1>Riya Agrahari</h1>
+            <p class="tagline">Web Developer & Data Science Enthusiast</p>
+            <div class="contact-info">
+                <a href="mailto:agrahaririya30@gmail.com"><i class="fas fa-envelope"></i> agrahaririya30@gmail.com</a>
+                <a href="tel:6389806151"><i class="fas fa-phone"></i> 6389806151</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Pune, India</a>
+                <a href="https://github.com/Riya6389" target="_blank"><i class="fab fa-github"></i> github.com/Riya6389</a>
+                <a href="https://linkedin.com/in/riya-agrahari-92b472274/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="section">
+            <h2>Profile</h2>
+            <p>Detail-oriented student proficient in web development with hands-on experience building responsive web applications. Skilled in Python, JavaScript, and data analysis, leveraging tools to extract insights and drive decisions. Known for a proactive approach and strong teamwork to deliver effective, scalable solutions.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience">
+                <div class="job-title">
+                    <h3>Data Science Intern</h3>
+                    <span class="date">Oasis Infobyte</span>
+                </div>
+                <ul>
+                    <li>Perform data cleaning, manipulation, and preprocessing tasks to prepare datasets for analysis</li>
+                    <li>Assist in developing machine learning models for predictive analytics and classification tasks</li>
+                    <li>Stay updated with the latest trends and advancements in data science and machine learning</li>
+                </ul>
+            </div>
+            
+            <div class="experience">
+                <div class="job-title">
+                    <h3>Software Development Engineer Intern</h3>
+                    <span class="date">Bluestock Fintech</span>
+                </div>
+                <ul>
+                    <li>Collaborate with designers and backend developers to implement intuitive and responsive user interfaces</li>
+                    <li>Develop and maintain web pages using HTML, CSS, and Bootstrap Framework</li>
+                    <li>Ensure cross-browser compatibility and mobile responsiveness for all web pages</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Foodies Restaurant</h3>
+                    <ul>
+                        <li>Designed and developed a visually appealing, fully responsive restaurant website</li>
+                        <li>Implemented features like food menu, events calendar, and online table booking</li>
+                        <li>Technologies: HTML, CSS, JavaScript</li>
+                    </ul>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Amazon Clone</h3>
+                    <ul>
+                        <li>Developed a responsive Amazon Clone website replicating core UI elements</li>
+                        <li>Implemented product listings, navigation bar, search functionality, and cart design</li>
+                        <li>Technologies: HTML, CSS</li>
+                    </ul>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Cloud Based Attendance System</h3>
+                    <ul>
+                        <li>Designed automated attendance system using ESP32 and RFID</li>
+                        <li>Integrated with Google Sheets and Apps Script for real-time data sync</li>
+                        <li>Reduced manual effort by 90% and improved accuracy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Education</h2>
+            
+            <div class="education">
+                <div class="degree">
+                    <h3>B.Tech in Electronics & Telecommunication</h3>
+                    <span class="date">Nutan College of Engineering & Research</span>
+                </div>
+            </div>
+            
+            <div class="education">
+                <div class="degree">
+                    <h3>HSC or 12</h3>
+                    <span class="date">People's Inter College</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill">Python</span>
+                <span class="skill">Django</span>
+                <span class="skill">NumPy</span>
+                <span class="skill">Pandas</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Cloud Foundations</span>
+                <span class="skill">AWS</span>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <div class="cert-card">
+                    <h3>Cloud Bootcamp By Google Cloud</h3>
+                    <p>08/2023 - 10/2023</p>
+                </div>
+                <div class="cert-card">
+                    <h3>Google Jamboard</h3>
+                    <p>05/202 - 07/202</p>
+                </div>
+                <div class="cert-card">
+                    <h3>Embedded System and IoT</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Riya Agrahari. All rights reserved.</p>
+    </footer>
+</body>
+</html>
